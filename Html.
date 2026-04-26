@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faiza Portfolio</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+  }
+
+  nav h2 {
+    color: #38bdf8;
+  }
+
+  nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  nav a:hover {
+    color: #38bdf8;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    color: #38bdf8;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+
+  /* SECTION */
+  section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1f2937;
+    border-radius: 12px;
+  }
+
+  h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  /* PROJECTS */
+  .project {
+    background: #111827;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  /* CONTACT */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #0ea5e9;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width:600px){
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Faiza</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <h1>Faiza Fernas</h1>
+  <p>Future IT Student | Web Development Learner</p>
+</div>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Basic Computer Skills</li>
+    <li>Microsoft Office</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    Personal Portfolio Website (this project)
+  </div>
+
+  <div class="project">
+    Practice Landing Page Design
+  </div>
+
+  <div class="project">
+    Small Business Management Experience
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p>Background in Economics</p>
+  <p>Experience in customer service and small business</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea rows="4" placeholder="Message"></textarea>
+  <button>Send</button>
+</section>
+
+</body>
+</html>
